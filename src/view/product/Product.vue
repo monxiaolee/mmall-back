@@ -6,6 +6,7 @@
 </template>
 <script>
 import axios from 'axios'
+let qs = require('qs')
 export default {
   data () {
     return {
@@ -14,7 +15,7 @@ export default {
   },
   methods: {
     addCategory () {
-      axios.post('/manage/caterogy/add_category.do', { categoryName: '窗帘', parentId: '0' }).then(function (response) {
+      axios.post('/manage/caterogy/add_category.do', qs.stringify({ categoryName: '窗帘', parentId: '0' })).then(function (response) {
         console.log(response)
       }).catch(function (error) {
         console.log(error)
