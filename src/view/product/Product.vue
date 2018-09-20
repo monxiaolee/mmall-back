@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>商品页面</h1>
+    <h1>商品管理</h1>
     <!-- <span @click="addCategory">添加商品类别</span> -->
   </div>
 </template>

@@ -35,6 +35,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       '@': resolve('src'),
+      '~': resolve('static')
     }
   },
   module: {
@@ -49,10 +50,11 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
-      },{
-        test: /\.less$/,
-        loader: "style-loader!css-loader!less-loader"
       },
+      // {
+      //   test: /\.less$/,
+      //   loader: "style-loader!css-loader!less-loader"
+      // },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
