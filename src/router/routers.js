@@ -54,7 +54,7 @@ export default [
         name: '订单管理',
         meta: {
           icon: '',
-          title: '商品管理'
+          title: '订单管理'
         },
         component: () => import('@/view/order/Order')
       }
